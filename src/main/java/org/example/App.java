@@ -3,10 +3,6 @@ package org.example;
 import org.example.core.Core;
 import org.example.interfaz.View;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
