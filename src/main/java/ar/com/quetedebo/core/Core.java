@@ -1,4 +1,5 @@
-package org.example.core;
+package ar.com.quetedebo.core;
+
 import java.util.Observable;
 
 public class Core extends Observable {

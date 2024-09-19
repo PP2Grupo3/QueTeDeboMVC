@@ -1,19 +1,20 @@
-package org.example.interfaz;
-
-import org.example.core.Core;
+package ar.com.quetedebo.interfaz;
 
 import java.util.Observable;
 import java.util.Observer;
+
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class View extends JPanel implements Observer {
+import ar.com.quetedebo.core.Core;
+
+public class GastosView extends JPanel implements Observer {
     private JLabel label;
     private JButton button;
     private Core core;
 
-    public View(Core model) {
+    public GastosView(Core model) {
         this.core = model;
 
         this.label = new JLabel("Tenes deudas");

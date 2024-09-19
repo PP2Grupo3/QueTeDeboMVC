@@ -1,17 +1,17 @@
-package org.example.interfaz;
-
-import org.example.core.Core;
+package ar.com.quetedebo.interfaz;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Observable;
 import java.util.Observer;
 
+import ar.com.quetedebo.core.Core;
+
 public class InputController implements Observer {
     private Core core;
-    private View view;
+    private GastosView view;
 
-    public InputController(Core core, View view) {
+    public InputController(final Core core, GastosView view) {
         this.core = core;
         this.view = view;
 
