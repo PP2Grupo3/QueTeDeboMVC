@@ -1,0 +1,22 @@
+[
+  {
+    "address": "address1",
+    "amount": 100.0,
+    "name": "Debt 1"
+  },
+  {
+    "address": "address2",
+    "amount": 250.5,
+    "name": "Debt 2"
+  },
+  {
+    "address": "address3",
+    "amount": 75.75,
+    "name": "Debt 3"
+  },
+  {
+    "address": "address4",
+    "amount": 300.0,
+    "name": "Debt 4"
+  }
+]

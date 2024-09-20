@@ -1,6 +1,8 @@
 package ar.com.quetedebo;
 
 import ar.com.quetedebo.core.Core;
+import ar.com.quetedebo.core.DatabaseRepository;
+import ar.com.quetedebo.core.JsonDatabaseRepository;
 import ar.com.quetedebo.interfaz.GastosView;
 
 public class App 

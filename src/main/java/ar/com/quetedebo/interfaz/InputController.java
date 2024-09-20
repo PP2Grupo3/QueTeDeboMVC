@@ -1,11 +1,13 @@
 package ar.com.quetedebo.interfaz;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
 import ar.com.quetedebo.core.Core;
+import ar.com.quetedebo.core.Debt;
+import ar.com.quetedebo.core.Wallet;
 
 public class InputController implements Observer {
     private Core core;
@@ -14,15 +16,19 @@ public class InputController implements Observer {
     public InputController(final Core core, GastosView view) {
         this.core = core;
         this.view = view;
-
-        view.getButton().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                core.setData("Deuda saldada");
-            }
-        });
-
         this.core.addObserver(this);
+    }
+    public void pay (Wallet wallet, String destinationAddress, Float amount){
+        core.pay(wallet, destinationAddress);
+    }
+    public void addWallet(Wallet wallet){
+        core.addWallet(wallet);
+    }
+    public List<Debt> getDebts(){
+        return core.getDebt();
+    }
+    public List <Wallet> getWallets(){
+        return core.getWallets();
     }
 
     @Override
