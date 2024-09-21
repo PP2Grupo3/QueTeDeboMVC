@@ -1,8 +1,8 @@
 package ar.com.quetedebo;
 
+import javax.swing.JScrollPane;
+
 import ar.com.quetedebo.core.Core;
-import ar.com.quetedebo.core.DatabaseRepository;
-import ar.com.quetedebo.core.JsonDatabaseRepository;
 import ar.com.quetedebo.interfaz.GastosView;
 
 public class App 
@@ -17,7 +17,7 @@ public class App
         frame.setSize(500,500);
         frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
         
-        frame.add(view);
+        frame.add(new JScrollPane(view));
       
         frame.setVisible(true);
     }
